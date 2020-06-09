@@ -37,15 +37,22 @@ header h3{
 
 header p:first-child{
     color:rgb(96, 35, 153);
+    text-align: center;
+}
+
+header p:nth-child(){
+    text-align: center;
 }
 
 header img{
-    width:300px;
+    width:100%;
     height:200px;
 }
 
+
 header span{
     color:rgb(96, 35, 153);
+    text-align: center;
 }
 
 header h4{
@@ -66,29 +73,28 @@ header h4{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-content: space-between;
     margin:10px auto;
     width:70%;
-}
-
-.list{
-    box-shadow: 3px 5px 10px #888888;
 }
 
 header .img{
     width:30%;
     margin: 10px 20px; 
+
 }
 
 header .list{
-    width:70%;
+    width:65%;
     margin:10px;
     border:1px solid rgb(235, 235, 235);
     background-color:rgb(253, 250, 250); 
+    box-shadow: 3px 5px 10px #888888;
 }
 
 .scroll{
-    overflow: scroll;
-    height:200px;  
+     overflow-y: scroll;
+     height:200px;  
 }
 
 header .img p{
@@ -122,6 +128,10 @@ header .img p{
 .form form{
     padding:20px;
 }
+.form form input{
+    padding-top: 30px;
+}
+
 
 input{
     width: 400px;
@@ -176,6 +186,7 @@ input{
    padding:20px 20px 30px;
    text-align: left;
    box-shadow: 3px 5px 10px #888888;
+   position: relative;
 }
 
 .x-box img{
@@ -210,7 +221,7 @@ input{
 #x-box{
     font-size: 13px;
     position: absolute;
-    right: 600px;
+    left: 190px;
 }
 
 .first-wrapper{
@@ -237,19 +248,7 @@ input{
 .link1 a{
     font-size: 13px;
     position: absolute;
-    left:450px
-}
-
-.link2 a{
-    font-size: 13px;
-    position: absolute;
-    right:600px
-}
-
-.link3 a{
-    font-size: 13px;
-    position: absolute;
-    right:300px
+    left:190px;
 }
 
 .project05{
@@ -520,11 +519,13 @@ td button{
     color:white;
     background-color: black;
     border-radius: 8px;
+    border:none;
 }
 
 .orange{
     background-color:rgb(252, 79, 48) ;
     color: white;
+    border:none;
 }
 
 td .num{
@@ -591,9 +592,11 @@ td .year{
     border-radius: 8px;
     padding:20px;
     line-height: 27px;
-    margin: -230px auto 0px;
     width:220px;
     box-shadow: 3px 5px 10px #888888;
+    position: absolute;
+    left:95px;
+    bottom: 85px;
 }
 
 .empty{
@@ -617,6 +620,7 @@ td .year{
     justify-content: center;
     flex-direction: column;
     padding:30px;
+    position: relative;
 }
 
 .download ul{
@@ -649,8 +653,7 @@ hr{
     text-align: center;
     height:32px;
     position: absolute;
-    right:702px;
-    top:5790px;
+    margin-top: 160px;
 }
 
 .project11{
@@ -703,6 +706,7 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin:auto;
 }
 
 .second-part .fifth-box{
@@ -710,6 +714,7 @@ hr{
     border: 0px solid;
     background-color: rgb(0, 140, 255);
     padding: 30px 118px;
+    float:left;
 }
 
 .second-part .sixth-box{
@@ -717,6 +722,7 @@ hr{
     border: 0px solid;
     background-color: darkorchid;
     padding:30px;
+    float:left;
 }
 
 .second-part .seventh-box{
@@ -724,6 +730,7 @@ hr{
     border: 0px solid;
     background-color: rgb(41, 41, 128);
     padding: 30px 153px; 
+    float:left;
 }
 
 .second-part .eighth-box{
